@@ -38,3 +38,26 @@ ia-bookreader{
     overflow: hidden;
     margin: 0 auto;
 }
+/* Fix #11182: Match language and contributor dropdown heights */
+
+.language-dropdown,
+.role-dropdown,
+select.language-dropdown,
+select.role-dropdown,
+.dropdown-item {
+  min-height: 44px !important;
+  padding: 10px 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}
+
+@media (pointer: coarse) {
+  .language-dropdown,
+  .role-dropdown,
+  select.language-dropdown,
+  select.role-dropdown,
+  .dropdown-item {
+    min-height: 48px !important;
+  }
+}

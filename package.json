@@ -123,7 +123,8 @@
     "lint:fix": "npx eslint --fix src/ tests/ *.js *.cjs",
     "serve": "npx http-server . --port=8000",
     "serve-live": "npx live-server . --cors --port=8000 --watch=index.html,BookReader,BookReaderDemo",
-    "serve-dev": "env NODE_ENV='development' npm run build-css && env NODE_ENV='development' npx concurrently --kill-others npm:serve-live npm:build-*:watch",
+    "serve-dev": "cross-env NODE_ENV=development npm run build-css && cross-env NODE_ENV=development npx concurrently --kill-others npm:serve-live npm:build-*:watch",
+
     "test": "npx jest --coverage --colors",
     "test:watch": "npx jest --watch",
     "test:e2e": "npm run build && npx testcafe",
