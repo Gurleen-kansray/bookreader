@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>bookreader simple demo</title>
+    <title>BookReader Simple Demo</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,26 +10,30 @@
     <script src="../BookReader/webcomponents-bundle.js"></script>
     <script src="../BookReader/jquery-3.js"></script>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/fix-lang-dropdown.css">
 
     <!-- BookReader and plugins -->
     <link rel="stylesheet" href="../BookReader/BookReader.css"/>
     <script src="../BookReader/BookReader.js"></script>
 
-    <!-- Custom CSS overrides -->
+    <!-- Demo-specific CSS overrides -->
     <link rel="stylesheet" href="BookReaderDemo.css"/>
 </head>
 <body>
-  <div id="BookReader">
-      Internet Archive BookReader Demo<br/>
-      <noscript>
-      <p>
-          The BookReader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.  You can also try one of the <a href="https://archive.org/details/goodytwoshoes00newyiala"> other formats of the book</a>.
-      </p>
-      </noscript>
-  </div>
-  <script type="text/javascript" src="BookReaderJSSimple.js"></script>
-  <script>
-  instantiateBookReader('#BookReader');
-  </script>
+    <div id="BookReader">
+        Internet Archive BookReader Demo<br/>
+        <noscript>
+            <p>
+                The BookReader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.  
+                You can also try one of the <a href="https://archive.org/details/goodytwoshoes00newyiala">other formats of the book</a>.
+            </p>
+        </noscript>
+    </div>
+
+    <script type="text/javascript" src="BookReaderJSSimple.js"></script>
+    <script>
+        instantiateBookReader('#BookReader');
+    </script>
 </body>
 </html>

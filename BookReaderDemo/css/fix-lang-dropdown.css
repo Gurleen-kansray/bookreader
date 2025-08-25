@@ -1,0 +1,22 @@
+/* Fix for #11182: make Language dropdown rows consistent with Contributor role rows */
+
+.language-dropdown .dropdown-item,
+.role-dropdown .dropdown-item,
+select.language-dropdown,
+select.role-dropdown,
+.dropdown-item,
+select {
+    min-height: 44px !important;       /* ensures large enough touch area */
+    padding: 10px 14px !important;     /* comfortable spacing */
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+/* Extra height for touch devices */
+@media (pointer: coarse) {
+    .dropdown-item,
+    select {
+        min-height: 48px !important;
+    }
+}
